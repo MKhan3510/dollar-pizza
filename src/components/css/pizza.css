@@ -7,4 +7,7 @@
 
 .Pizza .header-text {
   padding-top: 8%;
+  text-align: center;
+  color: white;
+  font-size: 150px;
 }

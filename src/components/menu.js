@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import Plain from './plain';
-import Pepperoni from './pepperoni';
-import MeatLover from './meat-lover';
-import Veggie from './veggie';
-import Hawaiian from './hawaiian';
-import Bbq from './bbq';
+import Slice from './slice';
+import plain from './images/plain.jpg';
+import pepperoni from './images/pepperoni.jpg';
+import meat from './images/meat.jpg';
+import hawaiian from './images/hawaiian.jpg';
+import bbq from './images/bbq.jpg';
+import veggie from './images/veggie.jpeg';
 import './css/menu.css';
 
 function Menu() {
@@ -14,13 +15,42 @@ function Menu() {
       <h1 className='secondary-text'>Pizza Menu</h1>
       <div className='row'>
 
-        <Plain/>
-        <Pepperoni/>
-        <MeatLover/>
-        <Veggie/>
-        <Hawaiian/>
-        <Bbq/>
-      </div>
+        <Slice
+        img = {plain}
+        title= 'Plain'
+        description = "It's got cheese, it's got tomato sauce, and it's only  a dollar. What more could you ask for?"
+        price = "$1.00"></Slice>
+
+        <Slice
+        img = {pepperoni}
+        title= 'Pepperoni'
+        description = "A classic for many but its not halal"
+        price = "$1.00"></Slice>
+
+        <Slice
+        img = {hawaiian}
+        title= 'Hawaiian'
+        description = "I doont like this flavor but for you weirdos here "
+        price = "$1.00"></Slice>
+
+        <Slice
+        img = {meat}
+        title= 'Meat'
+        description = "It's got cheese, it's got tomato sauce, arbys we got the meats, and it's only  a dollar. Best deal in the world."
+        price = "$1.00"></Slice>
+
+        <Slice
+        img = {bbq}
+        title= 'Bbq'
+        description = "Bbq pizza for you bbq lovers"
+        price = "$1.00"></Slice>
+
+        <Slice
+        img = {veggie}
+        title= 'Veggie'
+        description = "On a diet heres our veggie slice"
+        price = "$1.00"></Slice>
+        </div>
     </div>
   );
 }
